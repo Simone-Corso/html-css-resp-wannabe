@@ -133,6 +133,15 @@ img {
     }
 
 }
+
+@media screen and (min-width:  480px){
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0px;
+    }
+}
     
 
 /************************************************
