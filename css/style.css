@@ -47,13 +47,9 @@ img {
 
 /* LAYOUT */
 .container {
-    width: 1140px;
+    width: 700px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .row {
@@ -137,18 +133,20 @@ img {
     }
 
 }
+@media screen and (max-width: 480px){
+.container{
+    max-width: 100%;
 
-@media screen and (max-width:  480px){
-
-    .container {
-        max-width: 320;
-        margin: 0 auto;
-        padding: 0 0px;
-    }
-    img {
-        max-width: calc(100%)
-    }
 }
+.row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+}
+
     
 
 /************************************************
