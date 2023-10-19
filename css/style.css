@@ -50,6 +50,10 @@ img {
     width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -124,7 +128,7 @@ img {
     margin-bottom: 2.5rem;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
     .container {
         width: 700px;
@@ -134,12 +138,15 @@ img {
 
 }
 
-@media screen and (min-width:  480px){
+@media screen and (max-width:  480px){
 
     .container {
-        width: 100%;
+        max-width: 320;
         margin: 0 auto;
         padding: 0 0px;
+    }
+    img {
+        max-width: calc(100%)
     }
 }
     
